@@ -102,7 +102,7 @@ public class HalamanUtama extends JFrame {
                 } else {
                     try (FileWriter writer = new FileWriter("data_123230066.txt")) {
                         for (int i = 0; i < dataList.size(); i++) {
-                            writer.write((i + 1) + " " + dataList.get(i) + "\n");
+                            writer.write(dataList.get(i) + "\n");
                         }
                         JOptionPane.showMessageDialog(HalamanUtama.this, "Data berhasil disimpan ke data_123230066.txt");
                     } catch (IOException ex) {
